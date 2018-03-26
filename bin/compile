@@ -8,7 +8,7 @@ ls -lsa "$1"
 ls -lsa "$1/.apt"
 ls -lsa "$1/.apt/usr/include"
 ls -lsa "$1/.apt/usr/include/boost"
-./configure --disable-dotnet --disable-java --disable-perl --disable-php --disable-python --disable-python3 --disable-node.js --prefix="$1/vendor" --with-boost-prefix="$1/.apt/usr"
+./configure --disable-dotnet --disable-java --disable-perl --disable-php --disable-python --disable-python3 --disable-node.js --prefix="$1/vendor" --with-boost-prefix="$1/.apt/usr" --with-java-prefix="$1/.apt/usr"
 make
 make install
 
