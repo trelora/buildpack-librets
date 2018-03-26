@@ -4,7 +4,7 @@ git clone https://github.com/trelora/libRETS.git
 cd libRETS
 ./autogen.sh
 mkdir -p "$1/vendor"
-ln -s "$1/app/.apt/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java" "$1/app/.apt/usr/bin/java"
+ln -s "$1/.apt/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java" "$1/.apt/usr/bin/java"
 java -version
 ./configure --disable-dotnet --disable-java --disable-perl --disable-php --disable-python --disable-python3 --disable-node.js --prefix="$1/vendor" --with-boost-prefix="$1/.apt/usr" --with-java-prefix="$1/.apt/usr"
 make
