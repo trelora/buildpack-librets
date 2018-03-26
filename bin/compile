@@ -2,8 +2,11 @@
 echo "-----> Installing libRETS"
 git clone https://github.com/trelora/libRETS.git
 cd libRETS
-chmod +x docker-install.sh
-./docker-install.sh
+./autogen.sh
+mkdir -p /app/vendor
+./configure --disable-dotnet --disable-java --disable-perl --disable-php --disable-python --disable-python3 --disable-node.js --prefix=/app/vendor --with-boost-prefix=/app/.apt
+make
+make install
 
 # Example below
 ## change to the BUILD_DIR ($1)
