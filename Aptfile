@@ -1,5 +1,0 @@
-default-jre
-libexpat1-dev
-libboost-dev
-libboost-filesystem-dev
-swig
