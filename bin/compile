@@ -4,6 +4,7 @@ git clone https://github.com/trelora/libRETS.git
 cd libRETS
 ./autogen.sh
 mkdir -p /app/vendor
+ls -lsa /app/.apt/usr/include/boost/
 ./configure --disable-dotnet --disable-java --disable-perl --disable-php --disable-python --disable-python3 --disable-node.js --prefix=/app/vendor --with-boost-prefix=/app/.apt/usr
 make
 make install
