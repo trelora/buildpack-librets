@@ -1,2 +1,7 @@
 #!/usr/bin/env bash
-echo "libRETS"
+
+cat << EOF
+---
+librets:
+  - it-does-things
+EOF

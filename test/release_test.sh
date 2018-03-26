@@ -5,5 +5,5 @@
 testReleaseOutput() {
   capture release
   assertCapturedSuccess
-  assertCaptured "libRETS"
+  assertCaptured "librets"
 }
