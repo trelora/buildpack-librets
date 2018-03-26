@@ -3,12 +3,12 @@ echo "-----> Installing libRETS"
 git clone https://github.com/trelora/libRETS.git
 cd libRETS
 ./autogen.sh
-mkdir -p "$BUILD_DIR/app/vendor"
-ls -lsa /app
-ls -lsa /app/.apt
-ls -lsa /app/.apt/usr/include
-ls -lsa /app/.apt/usr/include/boost
-./configure --disable-dotnet --disable-java --disable-perl --disable-php --disable-python --disable-python3 --disable-node.js --prefix="$BUILD_DIR/app/vendor" --with-boost-prefix="$BUILD_DIR/app/.apt/usr"
+mkdir -p "$1/vendor"
+ls -lsa "$1"
+ls -lsa "$1/.apt"
+ls -lsa "$1/.apt/usr/include"
+ls -lsa "$1/.apt/usr/include/boost"
+./configure --disable-dotnet --disable-java --disable-perl --disable-php --disable-python --disable-python3 --disable-node.js --prefix="$1/vendor" --with-boost-prefix="$1/.apt/usr"
 make
 make install
 
