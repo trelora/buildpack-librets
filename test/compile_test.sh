@@ -4,5 +4,5 @@
 
 testCompileSuccess() {
   capture compile
-  assertCapturedSuccess
+  assertEquals "Expected captured exit code to be 0; was <${RETURN}>" "0" "${RETURN}"
 }
