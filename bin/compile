@@ -2,7 +2,7 @@
 echo "-----> Installing libRETS"
 git clone https://github.com/trelora/libRETS.git
 cd libRETS
-docker-install.sh
+./docker-install.sh
 
 # Example below
 ## change to the BUILD_DIR ($1)
