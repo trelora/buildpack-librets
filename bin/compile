@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+echo "-----> Installing libRETS"
+# Example below
+## change to the BUILD_DIR ($1)
+#cd $1
+## download the binary (-O) silently (-s)
+#curl https://raw.githubusercontent.com/scottmotte/mupdf-binary/master/mupdf.tar.gz -s -O -ssl3
+## make a directory to untar (like unzip) the binary
+#mkdir -p vendor/mupdf
+## untar the binary to the directory we want
+#tar -C vendor/mupdf -xvf mupdf.tar.gz
