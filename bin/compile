@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 echo "-----> Installing libRETS"
-git clone https://github.com/trelora/libRETS.git /src/libRETS
-cd /src/libRETS
-/src/libRETS/docker-install.sh
+git clone https://github.com/trelora/libRETS.git
+cd libRETS
+docker-install.sh
 
 # Example below
 ## change to the BUILD_DIR ($1)
